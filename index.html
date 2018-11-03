@@ -5,13 +5,18 @@
     <title>GSM 영화 사이트-메인</title>
     <script type="text/javascript">
     </script>
-
-
     <style>
 
     @font-face {
       font-family: "Typo";
       src:url("C:/Windows/Fonts/Typo_SsangmunDongB.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
+    }
+
+    @font-face {
+      font-family: "Typosec";
+      src:url("C:/Windows/Fonts/a옛날목욕탕L.otf") format("opentype");
       font-style: normal;
       font-weight: normal;
     }
@@ -34,20 +39,24 @@
       left:380px;
       top: 180px;
     }
+
     .o{
       position: absolute;
       right:380px;
       top: 180px;
     }
+
     a{
       text-decoration: none;
       color: black;
     }
+
     .p1{
       position: absolute;
       left:280px;
       top: 260px;
   }
+
   .p2{
     position: absolute;
     right:280px;
@@ -64,16 +73,24 @@
     -o-transition: 0.5s all ease;
 }
 
+span{
+  position: absolute;
+  font-family: Typosec;
+  text-align:  center;
+  bottom: 20px;
+}
+
     </style>
   </head>
   <body>
 
     <div class="main"><h1 align="center">GSM 영화 소개 사이트</h1></div>
-    <div class="k"><a href="korea.html"><h1>한국영화</h1></a></div>
-    <div class="o"><a href="other.html"><h1>외국영화</h1></a></div>
-    <div class="p1"><a href="korea.html"><img src="한국영화 사진.jpeg" height="450px"></a></div>
-    <div class="p2"><a href="other.html"><img src="외국영화 사진.jpeg" height="450px"></a></div>
+    <span class="k"><a href="korea.html"><h1>한국영화</h1></a></span>
+    <span class="o"><a href="other.html"><h1>외국영화</h1></a></span>
+    <span class="p1"><a href="korea.html"><img src="한국영화 사진.jpeg" height="450px"></a></span>
+    <span class="p2"><a href="other.html"><img src="외국영화 사진.jpeg" height="450px"></a></span>
 
+<span><a href="http://www.kofic.or.kr/kofic/business/main/main.do" target="_blank">[자료출처 | KOFIC 영화진흥위원회]  [박재홍 | 김유진]</a></span>
 
   </body>
 </html>
