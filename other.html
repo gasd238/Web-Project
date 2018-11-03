@@ -3,38 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title>GSM 영화 사이트-외국</title>
-    <script type="text/javascript">
+    <script>
+    function SirenFunction(idMyDiv){
+         var objDiv = document.getElementById(idMyDiv);
+         if(objDiv.style.display=="block"){ objDiv.style.display = "none"; }
+          else{ objDiv.style.display = "block"; }
+    }
     </script>
     <style>
-    @font-face {
-      font-family: "Typo";
+
+    .singo_view { display:none; }
+
+
+    @font-face {  font-family: "Typo";
       src:url("C:/Windows/Fonts/Typo_SsangmunDongB.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
 
-    @font-face {
-      font-family: "Typosec";
+    @font-face {  font-family: "Typosec";
       src:url("C:/Windows/Fonts/a옛날목욕탕L.otf") format("opentype");
       font-style: normal;
       font-weight: normal;
     }
 
-    body{
-      background: #E6DEDC;
+    body{  background: #E6DEDC;
       margin:0px;
       font-family: Typo;
     }
 
-    .main h1{
-      font-size: 300% ;
+    .main h1{  font-size: 300% ;
       background: #FFF6E6;
       color: #F77683;
       text-shadow: -.030em .030em #FFF6E6, -.08em .08em #E7DCD7;
     }
 
-    h3 {
-        text-align: center;
+    h3 {  text-align: center;
         font-size: 40px;
         color: #F77683;
         background-color: #FFF6E6;
@@ -46,42 +50,100 @@
     }
 
 
-    span{
-      position: absolute;
+    span{ position: absolute;
       left: 60px;
       top: 180px;
       font-family: Typosec;
-      font-size: 170% ;
-}
+      font-size: 170% ;}
 
-li:hover{
-  color: #FF8383;
-  transform: scale(1.1);
-  transition: 0.5s all ease;
--webkit-transition: 0.5s all ease;
--moz-transition: 0.5s all ease;
--ms-transition: 0.5s all ease;
--o-transition: 0.5s all ease;
-}
+    .singo_view{
+      position: absolute;
+      left: 500px;
+      top: 20px;
+      background-color: #FFF6E6;
+      padding: 20px 20px 20px 20px;
+      font-size: 20px;
+    }
 
+    a{ text-decoration: none; }
+    a:hover{color: #FF8383;}
+
+    li:hover{ color: #FF8383;
+      transform: scale(1.1);
+      transition: 0.5s all ease;
+      -webkit-transition: 0.5s all ease;
+      -moz-transition: 0.5s all ease;
+      -ms-transition: 0.5s all ease;
+      -o-transition: 0.5s all ease; }
 
     .main a{text-decoration: none; color: white;}
     </style>
   </head>
   <body>
+
     <div class="main"><a href="index.html"><h1 align="center">GSM 영화 소개 사이트</h1></a></div>
 
     <span> <ol>
-      <li>아바타<hr></li>
-      <li>어벤져스:인피니티 워<hr></li>
-      <li>어벤져스:에이지 오브 울트론<hr></li>
-      <li>인터스텔라<hr></li>
-      <li>겨울왕국<hr></li>
-      <li>아이언맨 3<hr></li>
-      <li>캡틴 아메리카:시빌 워<hr></li>
-      <li>트랜스포머 3<hr></li>
-      <li>미션임파서블:고스트프로토콜<hr></li>
-      <li>트랜스포머</li>
+      <li><a href="#" onclick="SirenFunction('SirenDiv'); return false;" class="blind_view">아바타</a><hr></li>
+      <div class="singo_view" id="SirenDiv">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AgijOih89KM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          내용보기
+      </div>
+
+      <li><a href="#" onclick="SirenFunction('SirenDiv2'); return false;" class="blind_view">어벤져스:인피니티 워</a><hr></li>
+        <div class="singo_view" id="SirenDiv2">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/xUDhdCsLkjU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          내용보기
+      </div>
+
+      <li><a href="#" onclick="SirenFunction('SirenDiv3'); return false;" class="blind_view">어벤져스:에이지 오브 울트론</a><hr></li>
+      <div class="singo_view" id="SirenDiv3">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xmYifU6bjro" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          내용보기
+      </div>
+
+      <li><a href="#" onclick="SirenFunction('SirenDiv4'); return false;" class="blind_view">인터스텔라</a><hr></li>
+      <div class="singo_view" id="SirenDiv4">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/d2VN6NNa9BE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          내용보기
+      </div>
+
+      <li><a href="#" onclick="SirenFunction('SirenDiv5'); return false;" class="blind_view">겨울왕국</a><hr></li>
+      <div class="singo_view" id="SirenDiv5">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bbh1NIpDo-c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          내용보기
+      </div>
+
+      <li><a href="#" onclick="SirenFunction('SirenDiv6'); return false;" class="blind_view">아이언맨 3</a><hr></li>
+      <div class="singo_view" id="SirenDiv6">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GXLm-sj5XiM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          내용보기
+      </div>
+
+      <li><a href="#" onclick="SirenFunction('SirenDiv7'); return false;" class="blind_view">캡틴 아메리카:시빌 워</a><hr></li>
+      <div class="singo_view" id="SirenDiv7">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ehOCWue0Ww0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          내용보기
+      </div>
+
+      <li><a href="#" onclick="SirenFunction('SirenDiv8'); return false;" class="blind_view">트랜스포머 3</a><hr></li>
+      <div class="singo_view" id="SirenDiv8">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/NgvxDZJd8iQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          내용보기
+      </div>
+
+      <li><a href="#" onclick="SirenFunction('SirenDiv9'); return false;" class="blind_view">미션임파서블:고스트프로토콜</a><hr></li>
+      <div class="singo_view" id="SirenDiv9">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VLiAEXZK0qY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          내용보기
+      </div>
+
+      <li><a href="#" onclick="SirenFunction('SirenDiv10'); return false;" class="blind_view">트랜스포머</a></li>
+      <div class="singo_view" id="SirenDiv10">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8chFvoe8ix0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          내용보기
+      </div>
+
     </ol> </span>
 
     <h3>영화목록</h3>
