@@ -3,9 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>GSM 영화 사이트-한국</title>
-    <script type="text/javascript">
+    <script>
+    function SirenFunction(idMyDiv){
+         var objDiv = document.getElementById(idMyDiv);
+         if(objDiv.style.display=="block"){ objDiv.style.display = "none"; }
+          else{ objDiv.style.display = "block"; }
+    }
     </script>
     <style>
+
+    .singo_view { display:none; }
+
+    li<iv{
+      position:  absolute;
+    }
     @font-face {
       font-family: "Typo";
       src:url("C:/Windows/Fonts/Typo_SsangmunDongB.ttf") format("truetype");
@@ -54,6 +65,15 @@
       font-size: 170% ;
 }
 
+.singo_view{
+  position: absolute;
+  top:100px;
+  left: 500px;
+}
+a{
+  text-decoration: none;
+}
+
 li:hover{
   color: #FF8383;
   transform: scale(1.1);
@@ -64,8 +84,9 @@ li:hover{
 -o-transition: 0.5s all ease;
 }
 
+.myeong.on:active{
 
-
+}
     .main a{text-decoration: none; color: white;}
     </style>
   </head>
@@ -73,16 +94,56 @@ li:hover{
     <div class="main"><a href="index.html"><h1 align="center">GSM 영화 소개 사이트</h1></a></div>
 
     <span> <ol>
-      <li>명량<hr></li>
-      <li>신과함께: 죄와벌<hr></li>
-      <li>국제시장<hr></li>
-      <li>베테랑<hr></li>
-      <li>아바타<hr></li>
-      <li>괴물<hr></li>
-      <li>도둑들<hr></li>
-      <li>7번방의 선물<hr></li>
-      <li>암살<hr></li>
-      <li>광해, 왕이 된 남자</li>
+      <li><a href="#" onclick="SirenFunction('SirenDiv'); return false;" class="blind_view">명량</a><hr></li>
+      <div class="singo_view" id="SirenDiv">
+          내용보기
+      </div>
+
+      <li><a href="#" onclick="SirenFunction('SirenDiv2'); return false;" class="blind_view">신과함께: 죄와벌</a><hr></li>
+      <div class="singo_view" id="SirenDiv2">
+          내용보기
+      </div>
+
+      <li><a href="#" onclick="SirenFunction('SirenDiv3'); return false;" class="blind_view">국제시장</a><hr></li>
+      <div class="singo_view" id="SirenDiv3">
+          내용보기
+      </div>
+
+      <li><a href="#" onclick="SirenFunction('SirenDiv4'); return false;" class="blind_view">베테랑</a><hr></li>
+      <div class="singo_view" id="SirenDiv4">
+          내용보기
+      </div>
+
+      <li><a href="#" onclick="SirenFunction('SirenDiv5'); return false;" class="blind_view">아바타</a><hr></li>
+      <div class="singo_view" id="SirenDiv5">
+          내용보기
+      </div>
+
+      <li><a href="#" onclick="SirenFunction('SirenDiv6'); return false;" class="blind_view">괴물</a><hr></li>
+      <div class="singo_view" id="SirenDiv6">
+          내용보기
+      </div>
+
+      <li><a href="#" onclick="SirenFunction('SirenDiv7'); return false;" class="blind_view">도둑들</a><hr></li>
+      <div class="singo_view" id="SirenDiv7">
+          내용보기
+      </div>
+
+      <li><a href="#" onclick="SirenFunction('SirenDiv8'); return false;" class="blind_view">7번방의 선물</a><hr></li>
+      <div class="singo_view" id="SirenDiv8">
+          내용보기
+      </div>
+
+      <li><a href="#" onclick="SirenFunction('SirenDiv9'); return false;" class="blind_view">암살</a><hr></li>
+      <div class="singo_view" id="SirenDiv9">
+          내용보기
+      </div>
+
+      <li><a href="#" onclick="SirenFunction('SirenDiv10'); return false;" class="blind_view">광해, 왕이 된 남자</a></li>
+      <div class="singo_view" id="SirenDiv10">
+          내용보기
+      </div>
+
     </ol> </span>
 
     <h3>영화목록</h3>
